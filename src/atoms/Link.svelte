@@ -22,6 +22,7 @@
     display: block;
     padding: 15px;
     white-space: nowrap;
+    text-decoration: none;
   }
 
 </style>
