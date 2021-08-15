@@ -1,14 +1,18 @@
 <script lang="ts">
+import LanguageText from "./components/LanguageText.svelte";
+
+
 </script>
 
 <main>
-  
+  <LanguageText />
 </main>
 
 <style>
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #202124;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
   }
 
   main {
