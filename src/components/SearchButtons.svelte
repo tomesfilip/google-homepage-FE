@@ -13,8 +13,7 @@ import SearchButton from "../atoms/SearchButton.svelte";
   .search-buttons-container {
     height: 70px;
     padding-top: 18px;
-    top: 53px;
-    z-index: 0;
+    margin-bottom: 1.2rem;
   }
 
   center {

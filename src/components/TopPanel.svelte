@@ -11,8 +11,12 @@ const linkTexts: Array<string> = ["Gmail", "Images"]
     {#each linkTexts as linkTxt}
       <Link linkClass="white-link" text={linkTxt}/>
     {/each}
-    <AppsIcon width="24" height="24" />
-    <UserIcon />
+    <div class="apps-icon-container">
+      <AppsIcon width="24" height="24" />
+    </div>
+    <a href="https://www.instagram.com/102.tomes/" target="_blank" class="user-icon-container">
+      <UserIcon />
+    </a>
   </div>
 </header>
 
@@ -26,9 +30,27 @@ const linkTexts: Array<string> = ["Gmail", "Images"]
     padding: 1rem;
   }
   .icons-links {
-    width: 200px;
+    width: 210px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .user-icon-container, .apps-icon-container {
+    cursor: pointer;
+    height: 40px;
+    transition: all .3s;
+  }
+
+  .user-icon-container {
+    padding: 4px;
+  }
+  .user-icon-container:hover, .apps-icon-container:hover {
+    border-radius: 50%;
+    background-color: rgba(232,234,237,0.10);
+  }
+
+  .apps-icon-container {
+    padding: 8px;
   }
 </style>

@@ -20,9 +20,15 @@ import SearchIcon from "../svelteIcons/SearchIcon.svelte";
     border: 1px solid #5f6368;
     box-shadow: none;
     border-radius: 24px;
-    z-index: 3;
     height: 44px;
     margin: 0 auto;
+    transition: background-color, box-shadow, border-color .3s, .3s, .4s;
+  }
+
+  .searchbar-container:hover, .searchbar-container:focus-within {
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223,225,229,0);
   }
 
   .searchbar-input {

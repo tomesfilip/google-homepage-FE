@@ -8,13 +8,20 @@
 <a class={linkClass} href={linkTo} target={blank ? "_blank" : "_self"}>{text}</a>
 
 <style>
+  .blue-link, .grey-link, .white-link {
+    text-decoration: none;
+  }
+
+  .blue-link:hover, .grey-link:hover, .white-link:hover {
+    text-decoration: underline;
+  }
   .blue-link {
     color: #8ab4f8;
-    text-decoration: none;
   }
   .white-link {
     color: white;
-    text-decoration: none;
+    line-height: 24px;
+    font-size: 13px;
   }
 
   .grey-link {
@@ -22,7 +29,6 @@
     display: block;
     padding: 15px;
     white-space: nowrap;
-    text-decoration: none;
   }
 
 </style>

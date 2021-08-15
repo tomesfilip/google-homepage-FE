@@ -5,7 +5,6 @@ import SearchButtons from "./components/SearchButtons.svelte";
 import GoogleLogo from "./assets/googlelogo_light_color_272x92dp.png";
 import Footer from "./components/Footer.svelte";
 import TopPanel from "./components/TopPanel.svelte";
-
 </script>
 
 <TopPanel />
@@ -24,20 +23,13 @@ import TopPanel from "./components/TopPanel.svelte";
     font-size: 14px;    
   }
   main {
+    width: 100%;
     text-align: center;
     padding: 1rem;
+    margin-bottom: 14%;
   }
 
   .google-logo {
     margin-bottom: 1rem;
-  }
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
-    }
   }
 </style>
