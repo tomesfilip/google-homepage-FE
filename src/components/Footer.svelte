@@ -8,12 +8,12 @@ const linkTextsRight: Array<string> = ["Privacy", "Terms", "Settings"]
 <footer>
   <div class="left-side">
     {#each linkTextsLeft as linkTxt}
-      <Link linkClass="grey-link" linkTo="./" blank={false} text={linkTxt} />
+      <Link linkClass="grey-link" text={linkTxt} />
     {/each}
   </div>
   <div class="right-side">
     {#each linkTextsRight as linkTxt}
-      <Link linkClass="grey-link" linkTo="./" blank={false} text={linkTxt} />
+      <Link linkClass="grey-link" text={linkTxt} />
     {/each}
   </div>
 </footer>
@@ -31,5 +31,6 @@ const linkTextsRight: Array<string> = ["Privacy", "Terms", "Settings"]
 
   .left-side, .right-side {
     display: flex;
+    flex-wrap: wrap;
   }
 </style>

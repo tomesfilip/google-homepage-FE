@@ -6,6 +6,7 @@
 <svg 
   width={width}
   height={height}
+  fill="#fff"
   class="gb_Ve"
   focusable="false" 
   viewBox="0 0 24 24">

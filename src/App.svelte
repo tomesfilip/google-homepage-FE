@@ -4,9 +4,11 @@ import SearchBar from "./components/SearchBar.svelte";
 import SearchButtons from "./components/SearchButtons.svelte";
 import GoogleLogo from "./assets/googlelogo_light_color_272x92dp.png";
 import Footer from "./components/Footer.svelte";
+import TopPanel from "./components/TopPanel.svelte";
 
 </script>
 
+<TopPanel />
 <main>
   <img class="google-logo" src={GoogleLogo} alt="Google">
   <SearchBar />
@@ -23,6 +25,7 @@ import Footer from "./components/Footer.svelte";
   }
   main {
     text-align: center;
+    padding: 1rem;
   }
 
   .google-logo {

@@ -1,9 +1,8 @@
 <script lang="ts">
   export let text: string
-  export let linkTo: string
+  export let linkTo: string = "./"
   export let linkClass: string
-  export let blank: boolean
-
+  export let blank: boolean = false
 </script>
 
 <a class={linkClass} href={linkTo} target={blank ? "_blank" : "_self"}>{text}</a>
@@ -15,6 +14,7 @@
   }
   .white-link {
     color: white;
+    text-decoration: none;
   }
 
   .grey-link {
