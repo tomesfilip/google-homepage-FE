@@ -2,10 +2,12 @@
 import LanguageText from "./components/LanguageText.svelte";
 import SearchBar from "./components/SearchBar.svelte";
 import SearchButtons from "./components/SearchButtons.svelte";
+import GoogleLogo from "./assets/googlelogo_light_color_272x92dp.png";
 
 </script>
 
 <main>
+  <img class="google-logo" src={GoogleLogo} alt="Google">
   <SearchBar />
   <SearchButtons />
   <LanguageText />
@@ -18,31 +20,14 @@ import SearchButtons from "./components/SearchButtons.svelte";
     font-size: 14px;
   }
 
+  .google-logo {
+    margin-bottom: 2rem;
+  }
+
   main {
     text-align: center;
     padding: 1em;
     margin: 0 auto;
-  }
-
-  img {
-    height: 16rem;
-    width: 16rem;
-  }
-
-  h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 14rem;
-  }
-
-  p {
-    max-width: 14rem;
-    margin: 1rem auto;
-    line-height: 1.35;
   }
 
   @media (min-width: 480px) {
