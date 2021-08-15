@@ -1,10 +1,11 @@
 <script lang="ts">
 import LanguageText from "./components/LanguageText.svelte";
-
+import SearchButtons from "./components/SearchButtons.svelte";
 
 </script>
 
 <main>
+  <SearchButtons />
   <LanguageText />
 </main>
 
